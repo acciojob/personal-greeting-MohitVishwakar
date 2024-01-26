@@ -1,11 +1,19 @@
 
-import React from "react";
+import React, { useState } from "react";
 import './../styles/App.css';
 
 const App = () => {
+  const [count ,setcount] = useState("");
+  let entry =(e) =>{
+      setcount("Hello " + e.target.value + "!");
+  }
   return (
     <div>
-        {/* Do not remove the main div */}
+           <p>Enter your name:</p>
+       <input type="text" placeholder="enter"
+       onChange={entry}
+       />
+       <p>{count}</p>
     </div>
   )
 }

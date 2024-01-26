@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
            <p>Enter your name:</p>
-       <input type="text" placeholder="enter"
+       <input type="text" 
        onChange={entry}
        />
        <p>{count}</p>
